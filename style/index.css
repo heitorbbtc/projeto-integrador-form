@@ -1,0 +1,180 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    display: flex;
+
+}
+
+#app {
+    display: flex;
+    width: 100%;
+}
+
+.main-container {
+    width: 70%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.main-container h1 {
+    color: #2c3e50;
+    margin-top: 0rem;
+    margin-bottom: 10px;
+}
+
+.main-container p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9fff9;
+}
+
+legend {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-wrapper label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.input-wrapper input:focus,
+.input-wrapper select:focus,
+.input-wrapper textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76,175,80,0.5);
+}
+
+.btn-primary {
+    background: #4CAF50;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #43a047;
+}
+
+.aside-container {
+    width: 30%;
+    padding: 30px;
+    background: #ecf0f1;
+    overflow-y: auto;
+}
+
+.aside-container h2 {
+    margin-top: 0rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.card {
+    background: #fff;
+    border-left: 5px solid #4CAF50;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+    color: #27ae60;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    #app {
+        flex-direction: column;
+    }
+
+    .main-container, 
+    .aside-container {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .main-container {
+        border-bottom: 2px solid #ddd;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .input-wrapper input,
+    .input-wrapper select,
+    .input-wrapper textarea {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .main-container p {
+        font-size: 0.9rem;
+    }
+
+    legend {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+    }
+}

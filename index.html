@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões para a Cidade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div id="app">
+        <main class="main-container">
+            <h1>Formulário de Sugestões de Melhorias</h1>
+            <p>Preencha os dados abaixo para registrar um problema ou sugestão na cidade.</p>
+
+            <form method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Informações do solicitante</legend>
+                    <div class="input-wrapper">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações da sugestão</legend>
+                    <div class="input-wrapper">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria">
+                            <option value="">Selecione</option>
+                            <option value="infraestrutura">Infraestrutura</option>
+                            <option value="saude">Saúde</option>
+                            <option value="educacao">Educação</option>
+                            <option value="seguranca">Segurança</option>
+                            <option value="meio-ambiente">Meio Ambiente</option>
+                            <option value="transito">Trânsito</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="foto">Foto do local</label>
+                        <input type="file" id="foto" accept="image/*">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="local">Localização</label>
+                        <input type="text" id="local" placeholder="Ex: Rua A, Bairro Centro">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" rows="4" placeholder="Descreva o problema"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </main>
+
+        <aside class="aside-container">
+            <h2>Solicitações Recentes</h2>
+            <div class="card">
+                <h3>Infraestrutura</h3>
+                <p><strong>Local:</strong> Rua A, Centro</p>
+                <p>Buraco enorme na rua...</p>
+            </div>
+            <div class="card">
+                <h3>Saúde</h3>
+                <p><strong>Local:</strong> Bairro X</p>
+                <p>Posto de saúde sem médicos...</p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
